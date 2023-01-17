@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../ccs/estilos.css">
+</head>
+<body class="body">
+    <header class="header">
+        <a class="header__logocontenedor" href="../index.html">
+            <img class="header__logo" src="../img/logo_abalos.png" alt="logo abalos">
+        </a>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item"><a class="header__anchor" href="cervezas.html">CERVEZAS</a></li>
+                <li class="header__item"><a class="header__anchor" href="nosotros.html">NOSOTROS</a></li>
+                <li class="header__item"><a class="header__anchor" href="eventos.html">EVENTOS</a></li>
+                <li class="header__item"><a class="header__anchor header__anchor--activo" href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="mainform">
+        <div class="mainform__div">
+            <h2 class="main__titulo">CONOZCÁMONOS MEJOR</h2>
+            <form action="#" method="GET" enctype="multipart/form-data">
+                <fieldset>
+                    <br>
+                    <div class="mainformdatos__div">
+                        <label class="mainformdatos__label" for="username">Nombre</label>
+                        <input class="mainformdatos__input" type="text" name="userName" id="userName" required>
+                    </div>
+                    <br>
+                    <div class="mainformdatos__div">
+                        <label class="mainformdatos__label" for="userLastName">Apellido</label>
+                        <input class="mainformdatos__input" type="text" name="userLastName" id="userLastName" required>
+                    </div>
+                    <br>
+                    <div class="mainformdatos__div">
+                        <label class="mainformdatos__label" for="email">Email</label>
+                        <input class="mainformdatos__input" type="email" name="email" id="email" required>
+                    </div>
+                    <br>
+                    <div class="mainformdatos__div">
+                        <label class="mainformdatos__label" for="email">Edad</label>
+                        <input type="number" name="age" id="age" min="18" max="99" required>
+                    </div>
+                    <br>
+                    <div class="mainformdatos__div">
+                        <label class="mainformdatos__label" for="tipo de cerveza">Cerveza Favorita</label>
+                        <select name="cerveza_favorita" id="cerveza_favorita">
+                            <option value="Ipa">Ipa</option>
+                            <option value="Blonde">Pale Ale</option>
+                            <option value="Stout">Light Lagger</option>
+                            <option value="Stout">Festbier</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="mainformdatos__div">
+                        <label class="mainformdatos__label" for="enviar_mailing">Deseo recibir información a mi casilla de correo</label>
+                        <input type="checkbox" name="enviar_mailing" id="enviar_mailing" value="si">
+                    </div>
+                    <br>
+                    <div class="mainformdatos__div">
+                        <label class="mainformdatos__label" for="Comentarios">Dejanos tus comentarios</label>
+                    </div>
+                    <div class="mainformdatos__div"> 
+                        <textarea class="mainformdatos__input" name="comentarios" id="comentarios"></textarea>
+                    </div>
+                    <br>
+                    <div class="mainformdatos__div">
+                    <input type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <br>
+    <footer class="footer">
+        <div class="footer__div">
+            <a class="footer__logocontenedor" href="http://www.youtube.com"><img class="footer__logo" src="../img/youtube_logo.png" alt="youtube"></a>
+        </div>
+        <div class="footer__div">
+            <a class="footer__logocontenedor" href="http://www.instagram.com"><img class="footer__logo" src="../img/instagram_logo.png" alt="instagram"></a>
+        </div>
+        <div class="footer__div">
+            <a class="footer__logocontenedor" href="http://wwww.facebook.com"><img class="footer__logo" src="../img/facebook_logo.png" alt="facebook"></a>
+        </div>
+    </footer>
+</body>
+</html>
