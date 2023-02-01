@@ -1,0 +1,16 @@
+.mainnosotros{
+    &__1div{
+        display: flex;
+        justify-content:space-around;
+    }
+    &__2div{
+        padding: 2rem;
+    }
+    &__1imagen{
+        align-items: center;
+        padding: 5px;
+    }
+    &__1parrafo{
+        text-align: left;
+    } 
+}

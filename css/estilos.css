@@ -9,11 +9,14 @@
     color:dimgrey;
     padding-bottom: 20px;
 }
+/*ESTE DE ARRIBA ES VARIABLE */
 
 .main__subtitulos{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color:dimgrey;
 }
+/*ESTE DE ARRIBA ES VARIABLE */
+
 /*FINAL ETIQUETAS REUTILIZABLES*/
 
 
@@ -25,7 +28,6 @@
     justify-content: flex-start;
     align-items: center;
     grid-area: header;
-    
 }
 
 .header__logo{
@@ -73,6 +75,7 @@
 
 
 /*INICIO FOOTER*/
+
 .footer{
     display: flex;
     justify-content:center;
@@ -82,6 +85,7 @@
     overflow: hidder;
     grid-area: footer;
 }
+
 .footer__logo{
     width: 3.5rem;
     padding: 2rem;
@@ -92,6 +96,7 @@
 .footer__logo:hover{
     transform: scale(1.2);
 }
+
 /*FINAL FOOTER*/
 
 
@@ -104,49 +109,47 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto auto auto;
     grid-template-areas: "header"
-                         "contenido1"
-                         "contenido2"
+                         "index__1"
+                         "index__2"
                          "footer";
 }
+.index__1{ 
+    display: flex;
+    padding-right: 40px;
+    grid-area: index__1;
+}
 
-.contenido__titulo{
+.index__2{ 
+    display: flex;
+    padding-left: 40px;
+    grid-area: index__2;
+}
+
+.index__titulo{
     font-size: 4rem;
     text-align: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.contenido1{ 
-    display: flex;
-    padding-right: 40px;
-    grid-area: contenido1;
-}
-.contenido2{ 
-    display: flex;
-    padding-left: 40px;
-    grid-area: contenido2;
-}
-
-.fotohero1{
-    align-items: center;
-    flex-direction: column;
-    grid-area: contenido1;
-    display: flex;
-    justify-content: center;
-}
-
-.fotohero2{
-    display: flex;
-    grid-area: contenido2;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-
-
-.mainindex__parrafo{
+.index__parrafo{
     margin: 50px;
 }
 
+.index__fotohero1{
+    align-items: center;
+    flex-direction: column;
+    grid-area: index__1;
+    display: flex;
+    justify-content: center;
+}
+
+.index__fotohero2{
+    display: flex;
+    grid-area: index__2;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
 /*FINAL INDEX*/
@@ -154,28 +157,25 @@
 
 
 /*INICIO MAINNOSOTROS*/
-.mainnosotros{
 
-}
-
-.mainnosotros1__div{
+.mainnosotros__1div{
     display: flex;
     justify-content:space-around;
-    
 }
 
-.mainnosotros2__div{
+.mainnosotros__2div{
     padding: 2rem;
 }
 
-.mainnosotros1__imagen{
+.mainnosotros__1imagen{
     align-items: center;
     padding: 5px;
 }
 
-.mainnosotros1__parrafo{
+.mainnosotros__1parrafo{
     text-align: left;
 } 
+
 /*FINAL MAINNOSOTROS*/
 
 
@@ -193,30 +193,28 @@
                          "footer footer footer";
 }
 
-.fila1 {
-    display: flex;
-    
-}
-
-.fila2 {
-    display: flex;
-}
-
 .cervezas{
     grid-area: cervezas;
     padding: 20px;
 }
 
-.cervezas__div{
+.cervezas__fila1 {
     display: flex;
-    justify-content: center;
-    
+}
+
+.cervezas__fila2 {
+    display: flex;
 }
 
 .cervezas__titulo{
     text-align:center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color:dimgrey;
+}
+
+.cervezas__div{
+    display: flex;
+    justify-content: center;
 }
 
 .cervezas__imagen{
@@ -230,46 +228,42 @@
     padding-bottom: 40px;
 }
 
+
+
 /*FINAL CERVEZAS*/
 
 
 
 /*INICIO FORM*/
+
 .mainform{
     display: flex;
     justify-content: center;  
 } 
 
-.mainform__div{
-
-}
-
-.mainformdatos__div{
+.mainform__datosdiv{
     width: 40rem;
     padding: 2px;
     text-align: center;
 } 
 
-.mainformdatos__label{
+.mainform__datoslabel{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 } 
 
-.mainformdatos__input{
+.mainform__datosinput{
     width: 20rem;
 } 
+
 /*FINAL FORM*/
 
 
 
 /*INICIO EVENTOS*/
+
 .maineventos__div{
     display: flex;
     justify-content: center;
-} 
-
-.eventos__contenedor{
-    
-    
 } 
 
 .maineventos__divparrafo{
@@ -284,25 +278,27 @@
     width: 100rem;
     
 } 
+
 /*FINAL EVENTOS*/
+
 
 
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 1024px) {
     
-    .contenido1{
+    .index__1{
         flex-direction: column;
         align-items: center;
     }
 
-    .contenido2{
+    .index__2{
         flex-direction: column;
         flex-direction: column-reverse;
         padding-left: 0px;
     }
 
-    .text__div{
+    .index__div{
         flex-direction: column;
         padding: 30px;
     }
@@ -323,27 +319,27 @@
         flex-direction: column;
     }
 
-    .contenido1{
+    .index__1{
         flex-direction: column;
         align-items: center;
     }
 
-    .contenido2{
+    .index__2{
         flex-direction: column;
         flex-direction: column-reverse;
         padding-left: 0px;
     }
 
-    .text__div{
+    .index__div{
         flex-direction: column;
         padding: 30px;
     }
-    .fila1 {
+    .cervezas__fila1 {
         flex-direction: column;
         width:100%
     }
 
-    .fila2 {
+    .cervezas__fila2 {
         flex-direction: column;
     }
 
@@ -357,6 +353,11 @@
         padding-left: 0px;
         padding-bottom: 0px;
     }
+
+    .mainnosotros1__div{
+        flex-direction: column;
+    }
+
 }
 
 
@@ -364,34 +365,45 @@
 
     .header{
         flex-direction: column;
+        width: 320px;
     }
 
     .header__list{
         flex-direction: column;
     }
 
-    .contenido1{
+    .index__1{
         flex-direction: column;
         align-items: center;
+        
     }
 
-    .contenido2{
+    .index__2{
         flex-direction: column;
         flex-direction: column-reverse;
     }
 
-    .text__div{
-        flex-direction: column;
-        padding: 30px;
+    .index__titulo{
+    font-size: 2rem;
+    }
+    
+    .index__parrafo{
+        width: 150px;
     }
 
-    .fila1 {
+    .cervezas__div{
+        flex-direction: column;
+       
+    }
+
+    .cervezas__fila1 {
         flex-direction: column;
         width:100%
     }
 
-    .fila2 {
+    .cervezas__fila2 {
         flex-direction: column;
+        
     }
 
     .cervezas__imagen{
@@ -405,8 +417,26 @@
         padding-bottom: 0px;
     }
 
+    .mainnosotros__1div{
+        flex-direction: column;
+    }
+
+    .maineventos__video{
+        width: 100%;
+    }
+
     .footer__logo{
     width: 2.5rem;
-    padding: 1rem:
+    }
+    .footer{
+        width: 320px;
     }
 }
+
+
+/*
+git remote add origin https://github.com/juaneko16/abalos_cerveceria.git
+git branch -M main
+git push -u origin main
+*/
+

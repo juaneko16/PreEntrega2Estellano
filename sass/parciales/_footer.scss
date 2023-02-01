@@ -1,0 +1,18 @@
+.footer{
+    display: flex;
+    justify-content:center;
+    background-color:black;
+    width: 100%;
+    flex-direction: row;
+    overflow: hidder;
+    grid-area: footer;
+    &__logo{
+        width: 3.5rem;
+        padding: 2rem;
+        transform: scale(1);
+        transition: transform 0.5s;
+    }
+        &:hover{
+            transform: scale(1.2);
+        }
+}

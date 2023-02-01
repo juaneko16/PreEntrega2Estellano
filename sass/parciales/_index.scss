@@ -1,0 +1,45 @@
+.contenedorindex {
+    display:grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto auto;
+    grid-template-areas: "header"
+                         "index__1"
+                         "index__2"
+                         "footer";
+}
+
+.index{
+    &__1{ 
+        display: flex;
+        padding-right: 40px;
+        grid-area: index__1;
+    }
+    &__2{ 
+        display: flex;
+        padding-left: 40px;
+        grid-area: index__2;
+    }
+    &__titulo{
+        font-size: 4rem;
+        text-align: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    &__parrafo{
+        margin: 50px;
+    }
+    &__fotohero1{
+        align-items: center;
+        flex-direction: column;
+        grid-area: index__1;
+        display: flex;
+        justify-content: center;
+    }
+    &__fotohero2{
+        display: flex;
+        grid-area: index__2;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
