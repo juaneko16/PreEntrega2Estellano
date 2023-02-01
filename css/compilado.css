@@ -65,10 +65,7 @@
   grid-gap: 10px;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto auto auto;
-  grid-template-areas: "header"
- "index__1"
- "index__2"
- "footer"; }
+  grid-template-areas: "header" "index__1" "index__2" "footer"; }
 
 .index__1 {
   display: flex;
@@ -121,10 +118,7 @@
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(1fr, 1fr, 1fr, 1fr);
-  grid-template-areas: "header header header"
- "cervezas cervezas cervezas"
- "cervezas cervezas cervezas"
- "footer footer footer"; }
+  grid-template-areas: "header header header" "cervezas cervezas cervezas" "cervezas cervezas cervezas" "footer footer footer"; }
 
 .cervezas {
   grid-area: cervezas;
