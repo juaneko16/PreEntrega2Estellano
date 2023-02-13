@@ -16,16 +16,26 @@
         padding: 30px;
     }
 
+    .index__imagen{
+        width: 18rem;
+    }
+
     .cervezas__imagen{
         width: 15rem;
     }
-
+    .mainnosotros__1div{
+        flex-direction: column;
+    }
+    .maineventos__video{
+        width: 60rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
     
     .header{
         flex-direction: column;
+        margin-right: 20px;
     }
 
     .header__list{
@@ -34,7 +44,7 @@
 
     .index__1{
         flex-direction: column;
-        align-items: center;
+        padding-right: 0px;
     }
 
     .index__2{
@@ -47,6 +57,7 @@
         flex-direction: column;
         padding: 30px;
     }
+
     .cervezas__fila1 {
         flex-direction: column;
         width:100%
@@ -57,7 +68,11 @@
     }
 
     .cervezas__imagen{
-        width: 15rem;
+        width: 25rem;
+    }
+
+    .index__imagen{
+        width: 500px;
     }
     
     .cervezas__parrafo{
@@ -67,8 +82,13 @@
         padding-bottom: 0px;
     }
 
-    .mainnosotros1__div{
+    .mainnosotros__1div{
+        display: flex;
         flex-direction: column;
+
+    }
+    .maineventos__video{
+        width: 45rem;
     }
 
 }
@@ -78,7 +98,6 @@
 
     .header{
         flex-direction: column;
-        width: 320px;
     }
 
     .header__list{
@@ -88,27 +107,43 @@
     .index__1{
         flex-direction: column;
         align-items: center;
-        
+        padding-right: 0px;
     }
 
     .index__2{
         flex-direction: column;
         flex-direction: column-reverse;
+        align-items: center;
+        padding-left: 0px;
+        
+    }
+
+    .index__imagen{
+        width: 18rem;
     }
 
     .index__titulo{
-    font-size: 2rem;
+    font-size: 30px;
     }
     
     .index__parrafo{
-        width: 150px;
+        font-size: 15px;
+        margin: 20px;
+        
     }
 
+    .cervezas{
+        padding: 10px;
+    }
+    
     .cervezas__div{
         flex-direction: column;
        
     }
 
+    .cervezas__imagen{
+        width: 17rem;
+    }
     .cervezas__fila1 {
         flex-direction: column;
         width:100%
@@ -119,10 +154,6 @@
         
     }
 
-    .cervezas__imagen{
-        width: 16rem;
-    }
-    
     .cervezas__parrafo{
         text-align: center;
         padding-right: 0px;
@@ -134,15 +165,19 @@
         flex-direction: column;
     }
 
-   
     .maineventos__video{
         width: 100%;
     }
 
+    .mainform__datosdiv{
+        width: 15rem;
+    }
+    .mainform__datosinput{
+        width: 10rem;
+    }
+    
     .footer__logo{
     width: 2.5rem;
     }
-    .footer{
-        width: 320px;
-    }
+    
 }

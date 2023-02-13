@@ -1,21 +1,7 @@
-.contenedorcervezas {
-    display:grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(1fr, 1fr, 1fr, 1fr);
-    grid-template-areas: "header header header"
-                         "cervezas cervezas cervezas"
-                         "cervezas cervezas cervezas"
-                         "footer footer footer";
-}
 .cervezas{
     grid-area: cervezas;
     padding: 20px;
-
     &__fila1 {
-        display: flex;
-    }
-    &__fila2 {
         display: flex;
     }
     &__titulo{
@@ -35,5 +21,10 @@
         padding-right: 100px;
         padding-left: 100px;
         padding-bottom: 40px;
+        font-family: $texto_parrafo;
+    }
+    &__fila2 {
+        display: flex;
     }
 }
+
